@@ -2,7 +2,7 @@ import turtle
 
 def drawSpiral(t,length,color,colorBase):
 	# color is a 24 bit value that is changing abit
-	# each time for a nice color effect
+	# each time for a color nice effect
 	if length == 0:
 		return
 
