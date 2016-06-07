@@ -1,3 +1,4 @@
+import copy
 class Stack:
 	def __init__(self):
 		self.items = []
@@ -23,6 +24,15 @@ class Stack:
 
 	def isEmpty(self):
 		return len(self.items)==0
+
+	def __len__(self):
+		return len(self.items)
+
+	def __contains__(self,item):
+		return (item in self.items)
+
+	def getList(self):
+		return copy.deepcopy(self.items)
 
 def main():
 	s = Stack()
